@@ -1,166 +1,152 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Web Sitesi</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehmet Durmaz | Portfolyo</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background-color: #f4f4f4;
             color: #333;
-            line-height: 1.6;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-        }
-
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-
-        header h1 {
-            font-size: 24px;
-        }
-
-        nav ul {
-            list-style: none;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .hero {
-            background: linear-gradient(to right, #4CAF50, #8BC34A);
+            background-color: #24292e;
             color: white;
-            padding: 50px 20px;
+            padding: 2rem;
             text-align: center;
         }
 
-        .hero h2 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
+            header h1 {
+                margin: 0;
+                font-size: 2.5rem;
+            }
 
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
+            header p {
+                font-size: 1.1rem;
+                margin-top: 0.5rem;
+            }
 
-        button {
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            font-size: 18px;
-        }
-
-        button:hover {
-            background-color: #555;
-        }
-
-        .services {
+        nav {
+            background-color: #1b1f23;
             display: flex;
-            justify-content: space-around;
-            padding: 50px 20px;
-            text-align: center;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
         }
 
-        .service {
-            background-color: #fff;
+            nav a {
+                color: #ffffffcc;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                nav a:hover {
+                    color: white;
+                }
+
+        section {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid #24292e;
+            padding-bottom: 0.5rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background-color: white;
             border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 30%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 1rem;
         }
 
-        .service h3 {
-            margin-bottom: 10px;
-            font-size: 24px;
-        }
+            .card h3 {
+                margin-top: 0;
+            }
 
         footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+            background-color: #1b1f23;
+            color: white;
             text-align: center;
+            padding: 2rem 1rem;
         }
 
-        footer .container {
-            padding: 0 20px;
+        a.button {
+            display: inline-block;
+            margin-top: 1rem;
+            background-color: #007acc;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
         }
+
+            a.button:hover {
+                background-color: #005fa3;
+            }
     </style>
 </head>
 <body>
+
     <header>
-        <div class="container">
-            <h1>Hoş Geldiniz!</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Anasayfa</a></li>
-                    <li><a href="#">Hakkımızda</a></li>
-                    <li><a href="#">Hizmetler</a></li>
-                    <li><a href="#">İletişim</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Mehmet Durmaz</h1>
+        <p>Bilgisayar Mühendisi · Görüntü İşleme · AR · Yapay Zeka</p>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2>Web Sitenize Güç Katın!</h2>
-            <p>Modern web tasarımı ve etkileşimli özellikler ile tanışın.</p>
-            <button id="ctaButton">Hemen Başlayın</button>
-        </section>
+    <nav>
+        <a href="#about">Hakkımda</a>
+        <a href="#projects">Projeler</a>
+        <a href="#contact">İletişim</a>
+    </nav>
 
-        <section class="services">
-            <h2>Hizmetlerimiz</h2>
-            <div class="service">
-                <h3>Web Tasarımı</h3>
-                <p>Özel ve modern web siteleri tasarlıyoruz.</p>
+    <section id="about">
+        <h2>Hakkımda</h2>
+        <p>Ben Mehmet Durmaz, Çankırı Karatekin Üniversitesi Bilgisayar Mühendisliği son sınıf öğrencisiyim. Yapay zeka, görüntü işleme ve artırılmış gerçeklik teknolojileri üzerine projeler geliştiriyorum. Tanklar için otomatik hedef kilitleme, atık ayrıştırma, yürüme analizi gibi projelerde aktif olarak görev aldım. Ayrıca "SkyGuard AI" adlı İHA ve silah tanıma sistemine sahip mezuniyet projem üzerinde çalışıyorum.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projeler</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>SkyGuard AI</h3>
+                <p>AR destekli, YOLO ve LLM tabanlı bir İHA ve silah tanıma mobil uygulaması.</p>
             </div>
-            <div class="service">
-                <h3>Uygulama Geliştirme</h3>
-                <p>Mobil ve masaüstü uygulamalar geliştiriyoruz.</p>
+            <div class="card">
+                <h3>Akıllı Tank Sistemi</h3>
+                <p>Otonom hedef tespiti ve hareket kontrolü olan yapay zeka destekli tank prototipi.</p>
             </div>
-            <div class="service">
-                <h3>SEO Optimizasyonu</h3>
-                <p>Web sitenizin arama motorlarında daha üst sıralara çıkmasını sağlıyoruz.</p>
+            <div class="card">
+                <h3>Atık Ayrıştırma Robotu</h3>
+                <p>Görüntü işleme ve makine öğrenmesi ile atıkları sınıflandıran robotik sistem.</p>
             </div>
-        </section>
-    </main>
+            <div class="card">
+                <h3>Doğum Süreci Tahmini</h3>
+                <p>Fetal EKG sinyalleri ile doğum anını öngören derin öğrenme modelleri.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>İletişim</h2>
+        <p>YouTube Kanalım: <a href="https://youtube.com/@kendi-kanalın" target="_blank">Mehmet Durmaz AI</a></p>
+        <p>Email: <a href="mailto:mehmet.durmaz@ornekmail.com">mehmet.durmaz@ornekmail.com</a></p>
+        <a class="button" href="https://github.com/MehmetDurmaz" target="_blank">GitHub Profilim</a>
+    </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Modern Web Sitesi</p>
-        </div>
+        <p>&copy; 2025 Mehmet Durmaz. Tüm hakları saklıdır.</p>
     </footer>
 
-    <script>
-        document.getElementById('ctaButton').addEventListener('click', function() {
-            alert('Başlamak için formu doldurun!');
-        });
-    </script>
 </body>
 </html>
